@@ -28,6 +28,7 @@
 		4BA73225154CA29F005E6011 /* CopyFile */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CopyFile; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA73229154CA29F005E6011 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4BA7322B154CA29F005E6011 /* CopyFile.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CopyFile.1; sourceTree = "<group>"; };
+		4BA73232154CA2FF005E6011 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 			children = (
 				4BA73229154CA29F005E6011 /* main.c */,
 				4BA7322B154CA29F005E6011 /* CopyFile.1 */,
+				4BA73232154CA2FF005E6011 /* main.h */,
 			);
 			path = CopyFile;
 			sourceTree = "<group>";
