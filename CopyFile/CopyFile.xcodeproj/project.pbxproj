@@ -29,6 +29,7 @@
 		4BA73229154CA29F005E6011 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4BA7322B154CA29F005E6011 /* CopyFile.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CopyFile.1; sourceTree = "<group>"; };
 		4BA73232154CA2FF005E6011 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		4BA73233154CA487005E6011 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 		4BA7321A154CA29F005E6011 = {
 			isa = PBXGroup;
 			children = (
+				4BA73233154CA487005E6011 /* README.md */,
 				4BA73228154CA29F005E6011 /* CopyFile */,
 				4BA73226154CA29F005E6011 /* Products */,
 			);
