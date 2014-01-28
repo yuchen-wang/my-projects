@@ -3,7 +3,6 @@
 //  Longest Increasing Subsequence
 //
 //  Created by Yuchen Wang on 12-04-29.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #include <stdio.h>
@@ -55,7 +54,6 @@ void printLIS(int* seq, size_t seqLen)
 
 int main(int argc, const char * argv[])
 {
-
     int seq[10] = {2,6,3,5,8,7,10,15,11,12};
     printLIS(seq, 10);
     return 0;

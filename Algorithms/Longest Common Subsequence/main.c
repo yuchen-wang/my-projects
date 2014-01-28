@@ -3,7 +3,6 @@
 //  Longest Common Subsequence
 //
 //  Created by Yuchen Wang on 12-04-28.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #include <stdio.h>
@@ -35,8 +34,6 @@ void printLCS(char* seq1, size_t seq1Len, char* seq2, size_t seq2Len)
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
     char* seq1 = "abcdefgkn";
     char* seq2 = "cefhijkmn";
     printLCS(seq1, strlen(seq1), seq2, strlen(seq2));
