@@ -90,8 +90,67 @@ void encodeTree(TreeNode* root, size_t size)
             }
         }
     }
-    string[i++] = ')';
     printf("%s\n", string);
+    free(string);
+}
+
+void printList(ListNode* list)
+{
+    if (list == NULL) {
+        printf("empty list\n");
+    } else {
+        printf("list: %c", list->n->c);
+        list = list->next;
+        while (list != NULL) {
+            printf(" -> %c", list->n->c);
+            list = list->next;
+        }
+        printf("\n");
+    }
+}
+
+TreeNode* decodeTree(char* string)
+{
+    int i;
+    TreeNode* root = malloc(sizeof(TreeNode));
+    root->c = string[0];
+    root->n = NULL;
+    ListNode* list = malloc(sizeof(ListNode));
+    list->n = root;
+    list->next = NULL;
+    
+    for (i = 1; i < strlen(string); i++) {
+        if (string[i] == ')') {
+            ListNode* temp = list;
+            list = list->next;
+            free(temp);
+        } else if (string[i] != '(') {
+            TreeNode* tn = malloc(sizeof(TreeNode));
+            tn->c = string[i];
+            tn->n = NULL;
+
+            // for putting it in the children list
+            ListNode* ln = malloc(sizeof(ListNode));
+            ln->n = tn;
+            ln->next = NULL;
+            if (list->n->n == NULL) {
+                list->n->n = ln;
+            } else {
+                ListNode* child = list->n->n;
+                while (child->next != NULL) {
+                    child = child->next;
+                }
+                child->next = ln;
+            }
+
+            // for putting it in the path list
+            ListNode* pln = malloc(sizeof(ListNode));
+            pln->n = tn;
+            pln->next = list;
+            list = pln;
+        }
+    }
+    return root;
 }
 
 int main(int argc, const char * argv[])
@@ -120,7 +179,8 @@ int main(int argc, const char * argv[])
     b.n = &le;
     c.n = &lg;
     
-    encodeTree(&a, 7);
+    TreeNode* root = decodeTree("a(b(e()f())c(g())d())");
+    encodeTree(root, 7);
     return 0;
 }
 
