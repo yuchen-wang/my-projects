@@ -16,8 +16,26 @@ public class Solution {
         return isPossible(n - 20) || isPossible(n - 9) || isPossible(n - 6);
     }
 
+    public static boolean isPossibleDP(int n) {
+        boolean[] dp = new boolean[n];
+        for (int i = 0; i < n; i++) {
+            if (i + 1 == 20 || i + 1 == 9 || i + 1 == 6) {
+                dp[i] = true;
+            } else if (i + 1 - 20 >= 0 && dp[i + 1 - 20]) {
+                dp[i] = true;
+            } else if (i + 1 - 9 >= 0 && dp[i + 1 - 9]) {
+                dp[i] = true;
+            } else if (i + 1 - 6 >= 0 && dp[i + 1 - 6]) {
+                dp[i] = true;
+            } else {
+                dp[i] = false;
+            }
+        }
+        return dp[n - 1];
+    }
+
     public static void main(String args[] ) {
-        System.out.println(isPossible(47));
-        System.out.println(isPossible(7));
+        System.out.println(isPossibleDP(47));
+        System.out.println(isPossibleDP(7));
     }
 }
