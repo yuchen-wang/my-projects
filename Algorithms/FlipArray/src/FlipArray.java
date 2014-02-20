@@ -1,3 +1,7 @@
+/*
+ * Flip a section of the array to get the maximum number of 1s
+ */
+
 import java.io.*;
 import java.util.*;
 import java.lang.Integer;

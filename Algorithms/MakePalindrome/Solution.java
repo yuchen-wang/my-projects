@@ -1,7 +1,6 @@
 /*
- * Shopkeeper want sells in the packs of 20, 9 and 6.
- * Given an n, you need to find whether its possible to buy the items or not.
- * For example n=21, you can buy 2 packs of 6 and one pack of 9.
+ * Given a string, rearrange the string to a palindrome
+ * and return the palindrome if present or -1 
  */ 
 
 import java.io.*;

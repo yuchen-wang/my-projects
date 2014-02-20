@@ -1,3 +1,7 @@
+/*
+ * Check whether the given array is a progression (difference between consecutive numbers are the same)
+ */
+
 import java.io.*;
 import java.util.*;
 import java.lang.Integer;

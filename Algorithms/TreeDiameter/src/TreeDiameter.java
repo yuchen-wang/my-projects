@@ -1,3 +1,6 @@
+/*
+ * Find the diameter of a tree (maximum distance between two nodes)
+ */
 
 public class TreeDiameter {
 

@@ -1,9 +1,7 @@
-//
-//  main.c
-//  Encode Tree
-//
-//  Created by Yuchen Wang on 14-01-27.
-//
+/*
+ * Given a tree, represent it in a string.
+ * Given a string that represents a tree, convert it to a tree.
+ */
 
 #include <stdbool.h>
 #include <stdio.h>
