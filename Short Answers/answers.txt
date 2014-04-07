@@ -1,0 +1,47 @@
+1. Difference between ArrayList and Vector
+- ArrayList is not thread safe while Vector is
+- ArrayList grow by 50% while Vector grows by 100%
+
+2. Difference between HashMap and HashTable
+- both stores key value pairs
+- HashMap is not thread safe while HashTable is
+- HashMap is fail safe, i.e., if you change the structure while iterating, you'll know
+
+3. Difference between Array and ArrayList
+- Array is fixed size while ArrayList can grow in size
+- Array can be multidimensional while ArrayList has one dimension
+
+4. When to use ArrayList vs LinkedList
+- Both are fast for appending
+- ArrayList is fast for random access while LinkedList is not
+- LinkedList is fast for deletion while ArrayList is not
+- Use ArrayList if lots of random access
+- Use LinkedList if lots of editing in the middle
+
+5. Why is List<String> list = new ArrayList<String>() perferred over ArrayList<String> list = new ArrayList<String>()
+- Because it is more flexible for a function to take in a List, since any subclass like ArrayList or Vector can be passed in
+
+6. Thread vs Process
+- Threads share memory space while processes run in separate memory spaces
+- It's faster to do context switch on a thread
+- Threads provide simpler data sharing
+- Processes provide better isolation
+
+7. IPC
+- File
+- Socket
+- PIPE
+- PPS
+
+8. Sorting algorithms
+- insertion sort O(n2): keeping the head portion always sorted
+- selection sort O(n2): find the smallest element and swap with head
+- bubble sort O(n2): swap if right one is smaller than left one
+- merge sort O(nlogn): divide and conquer
+- heap sort O(nlogn): build a max heap in place, then swap max with tail 
+- quick sort O(nlogn)
+
+9. Can you force garbage collection
+- No you can't. You can make a request to JVM for garbage collection but it depends on JVM to do it or not
+- System.gc()
+- Bad practise to call it
