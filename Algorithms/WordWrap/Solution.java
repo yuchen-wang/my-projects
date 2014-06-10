@@ -6,11 +6,11 @@ public class Solution {
     public static void WordWrap(String str, int l) {
         String[] words = str.split(" ");
         int n = words.length;
-        int[] m = new int[n];
-        int[] s = new int[n];
+        int[] m = new int[n]; // m[i] represents the score when last sentence ends with word i, lower is better
+        int[] s = new int[n]; // s[i] represents the index of the word which will start the last sentence that ends with word i
         for (int i = 0; i < n; i++) {
             int lCopy = l;
-            int[] mTemp = new int[i + 1];
+            int[] mTemp = new int[i + 1]; // given that the sentence ends with word i, find the word that will start the sentence based on lowest score
             for (int k = i; k >= 0; k--) {
                 lCopy -= lCopy == l ? words[k].length() : words[k].length() + 1;
                 if (lCopy < 0) {
