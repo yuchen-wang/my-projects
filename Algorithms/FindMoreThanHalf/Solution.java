@@ -1,5 +1,5 @@
 /**
- * Find the longest subsequence common to the given sequences.
+ * Given an integer array, find the element that appears more than half times.
  */
 import java.io.*;
 import java.util.*;

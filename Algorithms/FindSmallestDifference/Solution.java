@@ -1,3 +1,7 @@
+/*
+ * Given two sorted, mutually exclusive arrays with non-repeating integers, 
+ * find the smallest difference between any of the integers in the two arrays.
+ */
 import java.io.*;
 import java.util.*;
 import java.lang.Integer;
