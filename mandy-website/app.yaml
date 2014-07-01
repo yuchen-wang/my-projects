@@ -1,0 +1,29 @@
+application: mandy-website
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /scripts/(.*\.js)$
+  static_files: scripts/\1
+  upload: scripts/(.*\.js)$
+  application_readable: true
+
+- url: /images/(.*\.jpg)$
+  static_files: images/\1
+  upload: images/.*\.jpg$
+  mime_type: "image/jpeg"
+
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: latest
