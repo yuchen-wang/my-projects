@@ -5,15 +5,21 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-- url: /scripts/(.*\.js)$
-  static_files: scripts/\1
-  upload: scripts/(.*\.js)$
-  application_readable: true
-
 - url: /images/(.*\.jpg)$
   static_files: images/\1
   upload: images/.*\.jpg$
   mime_type: "image/jpeg"
+
+- url: /js/(.*\.js)$
+  static_files: js/\1
+  upload: js/(.*\.js)$
+  application_readable: true
+
+- url: /css/(.*\.css)$
+  static_files: css/\1
+  upload: css/(.*\.css)$
+  application_readable: true
+  mime_type: "text/css"
 
 - url: /favicon\.ico
   static_files: favicon.ico
