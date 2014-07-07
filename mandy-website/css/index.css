@@ -3,9 +3,12 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  background: #f9f9f9 url(../img/bg.jpg);
 }
 
-
+footer {
+  padding-top: 40px;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -16,9 +19,21 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 20;
 }
 
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -100,8 +115,6 @@ body {
   letter-spacing: -1px;
 }
 
-
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -121,6 +134,14 @@ body {
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   /* Bump up size of carousel content */

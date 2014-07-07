@@ -5,9 +5,9 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-- url: /images/(.*\.jpg)$
-  static_files: images/\1
-  upload: images/.*\.jpg$
+- url: /img/(.*\.jpg)$
+  static_files: img/\1
+  upload: img/.*\.jpg$
   mime_type: "image/jpeg"
 
 - url: /js/(.*\.js)$
@@ -15,11 +15,88 @@ handlers:
   upload: js/(.*\.js)$
   application_readable: true
 
+- url: /js/gallery/(.*\.js)$
+  static_files: js/gallery/\1
+  upload: js/gallery/(.*\.js)$
+  application_readable: true
+
 - url: /css/(.*\.css)$
   static_files: css/\1
   upload: css/(.*\.css)$
   application_readable: true
   mime_type: "text/css"
+
+- url: /fonts/(.*\.eot)$
+  static_files: fonts/\1
+  upload: fonts/(.*\.eot)$
+  application_readable: true
+  mime_type: application/vnd.ms-fontobject
+
+- url: /fonts/(.*\.svg)$
+  static_files: fonts/\1
+  upload: fonts/(.*\.svg)$
+  application_readable: true
+  mime_type: images/svg+xml
+
+- url: /fonts/(.*\.ttf)$
+  static_files: fonts/\1
+  upload: fonts/(.*\.ttf)$
+  application_readable: true
+  mime_type: font/truetype
+
+- url: /fonts/(.*\.woff)$
+  static_files: fonts/\1
+  upload: fonts/(.*\.woff)$
+  application_readable: true
+  mime_type: application/x-font-woff
+
+- url: /fonts/bpicons/(.*\.eot)$
+  static_files: fonts/bpicons/\1
+  upload: fonts/bpicons/(.*\.eot)$
+  application_readable: true
+  mime_type: application/vnd.ms-fontobject
+
+- url: /fonts/bpicons/(.*\.svg)$
+  static_files: fonts/bpicons/\1
+  upload: fonts/bpicons/(.*\.svg)$
+  application_readable: true
+  mime_type: images/svg+xml
+
+- url: /fonts/bpicons/(.*\.ttf)$
+  static_files: fonts/bpicons/\1
+  upload: fonts/bpicons/(.*\.ttf)$
+  application_readable: true
+  mime_type: font/truetype
+
+- url: /fonts/bpicons/(.*\.woff)$
+  static_files: fonts/bpicons/\1
+  upload: fonts/bpicons/(.*\.woff)$
+  application_readable: true
+  mime_type: application/x-font-woff
+
+- url: /fonts/fontawesome/(.*\.eot)$
+  static_files: fonts/fontawesome/\1
+  upload: fonts/fontawesome/(.*\.eot)$
+  application_readable: true
+  mime_type: application/vnd.ms-fontobject
+
+- url: /fonts/fontawesome/(.*\.svg)$
+  static_files: fonts/fontawesome/\1
+  upload: fonts/fontawesome/(.*\.svg)$
+  application_readable: true
+  mime_type: images/svg+xml
+
+- url: /fonts/fontawesome/(.*\.ttf)$
+  static_files: fonts/fontawesome/\1
+  upload: fonts/fontawesome/(.*\.ttf)$
+  application_readable: true
+  mime_type: font/truetype
+
+- url: /fonts/fontawesome/(.*\.woff)$
+  static_files: fonts/fontawesome/\1
+  upload: fonts/fontawesome/(.*\.woff)$
+  application_readable: true
+  mime_type: application/x-font-woff
 
 - url: /favicon\.ico
   static_files: favicon.ico

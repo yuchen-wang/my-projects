@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Gallery</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+		<link rel="icon" href="favicon.ico">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+		<link href="css/gallery.css" rel="stylesheet">
+		<script src="js/gallery/modernizr.custom.js"></script>
+	</head>
+	<body>
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="navbar navbar-inverse navbar-static-top">
+              
+                <div class="navbar-header">
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </a>
+                <a class="navbar-brand" href="/">Bunnie's Nest</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li class="active"><a href="/gallery">Gallery</a></li>
+                    <li><a href="/">About</a></li>
+                    <!-- 
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <!-- 
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                      </ul>
+                    </li>
+                    -->
+                  </ul>
+                </div>
+
+            </div>
+          </div><!-- /container -->
+        </div><!-- /navbar wrapper -->
+
+		<div class="container marketing">
+			<div id="grid-gallery" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<img src="img/thumb/1.jpg" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/2.jpg" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/3.jpg" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/4.jpg" alt="img04"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/5.jpg" alt="img05"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/6.jpg" alt="img06"/>
+							</figure>
+						</li>
+                        <li>
+							<figure>
+								<img src="img/thumb/7.jpg" alt="img06"/>
+							</figure>
+						</li>
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<img src="img/thumb/1.jpg" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/2.jpg" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/3.jpg" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/4.jpg" alt="img04"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/5.jpg" alt="img05"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/6.jpg" alt="img06"/>
+							</figure>
+						</li>
+                        <li>
+							<figure>
+								<img src="img/thumb/7.jpg" alt="img06"/>
+							</figure>
+						</li>
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+		</div>
+		<script src="js/gallery/imagesloaded.pkgd.min.js"></script>
+		<script src="js/gallery/masonry.pkgd.min.js"></script>
+		<script src="js/gallery/classie.js"></script>
+		<script src="js/gallery/cbpGridGallery.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+		</script>
+	</body>
+</html>

@@ -39,7 +39,15 @@ class TestHandler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('test.html')
         self.response.write(template.render(template_values))
 
+class GalleryHandler(webapp2.RequestHandler):
+    def get(self):
+        template_values = {
+        }
+        template = JINJA_ENVIRONMENT.get_template('gallery.html')
+        self.response.write(template.render(template_values))
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-    ('/test', TestHandler)
+    ('/test', TestHandler),
+    ('/gallery', GalleryHandler)
 ], debug=True)
